@@ -14,17 +14,15 @@ pub fn Solution() anyerror!void {
     while (try in_stream.readUntilDelimiterOrEof(&buf, '\n')) |line| {
         var firstNumber: u8 = 0;
         var secondNumber: u8 = 0;
-        var count: u16 = 0;
 
         for (line) |char| {
             if (std.ascii.isDigit(char)) {
-                if (count == 0) {
+                if (firstNumber == 0) {
                     firstNumber = char;
                     if (secondNumber == 0) secondNumber = char;
                 } else {
                     secondNumber = char;
                 }
-                count += 1;
             }
         }
 
