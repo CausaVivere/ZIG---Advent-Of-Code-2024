@@ -1,7 +1,7 @@
 const std = @import("std");
 const print = std.debug.print;
 
-pub fn Solution() anyerror!void {
+pub fn Solution() !void {
     // Read File
     var file = try std.fs.cwd().openFile("src/inputs/day1_calibration.txt", .{});
     defer file.close();
