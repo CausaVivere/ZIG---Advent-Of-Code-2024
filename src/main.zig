@@ -1,10 +1,13 @@
 const std = @import("std");
 const dayOne = @import("1.zig");
 const dayTwo = @import("2.zig");
+const dayThree = @import("3.zig");
 
 pub fn main() !void {
     try dayOne.Solution();
     try dayTwo.Solution();
+    try dayThree.SolutionPartOne();
+    try dayThree.SolutionPartTwo();
 }
 
 test "simple test" {
