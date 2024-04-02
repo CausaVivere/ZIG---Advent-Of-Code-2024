@@ -9,7 +9,8 @@ pub fn main() !void {
     try dayTwo.Solution();
     try dayThree.SolutionPartOne();
     try dayThree.SolutionPartTwo();
-    try dayFour.Solution();
+    try dayFour.SolutionPartOne();
+    try dayFour.SolutionPartTwo();
 }
 
 test "simple test" {
